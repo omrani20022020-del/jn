@@ -17,15 +17,13 @@ st.subheader(
     "🔀 Synoptique de l'Installation (Turbine KVS-412 & Cycle Fermé n-Butane)"
 )
 try:
-    # Utilisation exacte du nom de ton fichier image
-    st.image(
-        "Schéma technique turbine à gaz et cycle ORC.png",
-        use_container_width=True,
-    )
+  # Utilise exactement le nom du fichier que tu viens de téléverser
+  st.image("schema_steg.png", use_container_width=True)
 except Exception as e:
-    st.error(
-        f"⚠️ Erreur de chargement de l'image : assure-toi que le fichier 'Schéma technique turbine à gaz et cycle ORC.png' est bien dans le même dossier sur GitHub."
-    )
+  st.error(
+      "⚠️ Erreur de chargement de l'image : vérifie que le fichier"
+      " 'schema_steg.png' est bien là."
+  )
 
 st.markdown("---")
 
